@@ -17,3 +17,7 @@ resource "aws_instance" "example" {
   
 }
 
+output "public_ip"{
+value=aws_instance.web.public_ip  # web what ever the name we mentioned in the resource name need to pass this as parameter 
+}
+
